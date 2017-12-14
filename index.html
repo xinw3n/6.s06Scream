@@ -9,7 +9,7 @@
 body,h1,h5 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-    background-image: url('images/website/background-the-scream.jpg');
+    background-image: url('static/images/background-the-scream.jpg');
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -28,7 +28,7 @@ iframe{
 
 <div class="bgimg w3-display-container w3-text-white">
   <div class="w3-display-middle w3-jumbo">
-    <img class="full" src="images/website/logo.png"/>
+    <img class="full" src="static/images/logo.png"/>
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('concept').style.display='block'" class="w3-button w3-black">concept</button></p>
@@ -58,7 +58,7 @@ iframe{
     <div class="w3-container">
       <h5> The <b>Scream</b> canister is a <b>playful</b> way to alleviate stress, a critical problem many people face in their fast-paced life. Screaming can have a <b>cathartic</b> effect; however, the social norm leaves little room for people to engage in this activity. The <b>Scream</b> canister will empower people to healthly express their stress.</h5>
       <h5>The <b>Scream</b> canister harnesses people's scream and let them share the loudness on a social platform for <b>social bonding</b> and to <b>normalize</b> talking about stress.</h5>
-      <img class="full" src="images/website/brainstorm/scream.png" style="width:600px;"/>
+      <img class="full" src="static/images/brainstorm/scream.png" style="width:600px;"/>
     </div>
   </div>
 </div>
@@ -94,12 +94,12 @@ iframe{
         
       <h5>Then we fabricated the large box ("mold") out of plastic. Then we calculated the amount of silicone we would need to make a 3mm layer in that box. We mixed silicone from Smooth-On, put it in a vacuum to get rid of the bubbles, and finally poured it into the box. We let the silicone cure overnight; then we got a nice layer of silicone for the canister. To turn the flat piece into a "container," we folded it and sealed the sides like how you would sew the sides to make a pocket. Silicone cures onto itself so we just mixed more silicone to use to seal the sides. Once the sides were cured, we just needed to turn it over and put in the foam.</h5>
         
-    <img class="full" src="images/website/fabrication/box.jpg" style="width:600px;"/>
-    <img class="full" src="images/website/fabrication/silicone-kit.jpg" style="width:600px;"/>
-    <img class="full" src="images/website/fabrication/degassing.jpg" style="width:600px;"/>
-    <img class="full" src="images/website/fabrication/pouring.jpg" style="width:600px;"/>
-    <img class="full" src="images/website/fabrication/cross-section.jpg" style="width:600px;"/>
-    <img class="full" src="images/website/fabrication/final.jpg" style="width:600px;"/>
+    <img class="full" src="static/images/fabrication/box.jpg" style="width:600px;"/>
+    <img class="full" src="static/images/fabrication/silicone-kit.jpg" style="width:600px;"/>
+    <img class="full" src="static/images/fabrication/degassing.jpg" style="width:600px;"/>
+    <img class="full" src="static/images/fabrication/pouring.jpg" style="width:600px;"/>
+    <img class="full" src="static/images/fabrication/cross-section.jpg" style="width:600px;"/>
+    <img class="full" src="static/images/fabrication/final.jpg" style="width:600px;"/>
     
     </div>
   </div>
@@ -114,20 +114,20 @@ iframe{
     </div>
     <div class="w3-container">
       <h5>In order to measure screams, we decided to use a standard electret microphone. Interfacing with the NodeMCU was fairly simple and is shown below.</h5>
-      <img class="full" src="images/website/circuit:code/ElectretMic.png" style="width:600px;"/>
-      <img class="full" src="images/website/circuit:code/esp8266.jpg" style="width:600px;"/> 
+      <img class="full" src="static/images/circuit:code/ElectretMic.png" style="width:600px;"/>
+      <img class="full" src="static/images/circuit:code/esp8266.jpg" style="width:600px;"/> 
       <h6>The resistor is soldered to the back of the board andd thus not showing in the picture.</h6><br>
         
-      <h5>We had some difficulty accessing the ESP8266 as a server, but by following this <a href="https://github.com/tttapa/ESP8266">guide</a>, we were able to resolve many issues.</h5>
-      <h5>Using <a href="https://tttapa.github.io/ESP8266/Chap10%20-%20Simple%20Web%20Server.html">Simple Web Server</a>, we were able to route our webpages with POST and GET as follows.</h5>
-      <img class="full" src="images/website/circuit:code/Routing.png" style="width:600px;"/>
-      <h5>Using <a href="https://tttapa.github.io/ESP8266/Chap11%20-%20SPIFFS.html">SPIFFS</a>, we were able to read and write files onto the ESP8266 as well as read in data without refreshing the page.</h5>
-      <h5>Using <a href="https://tttapa.github.io/ESP8266/Chap16%20-%20Data%20Logging.html">Data Logging</a>, we learned to display our data on the leaderboard.</h5>
+      <h5>We had some difficulty accessing the ESP8266 as a server, but by following this <a href="https://github.com/tttapa/ESP8266" target="_blank">guide</a>, we were able to resolve many issues.</h5>
+      <h5>Using <a href="https://tttapa.github.io/ESP8266/Chap10%20-%20Simple%20Web%20Server.html" target="_blank">Simple Web Server</a>, we were able to route our webpages with POST and GET as follows.</h5>
+      <img class="full" src="static/images/circuit:code/Routing.png" style="width:600px;"/>
+      <h5>Using <a href="https://tttapa.github.io/ESP8266/Chap11%20-%20SPIFFS.html" target="_blank">SPIFFS</a>, we were able to read and write files onto the ESP8266 as well as read in data without refreshing the page.</h5>
+      <h5>Using <a href="https://tttapa.github.io/ESP8266/Chap16%20-%20Data%20Logging.html" target="_blank">Data Logging</a>, we learned to display our data on the leaderboard.</h5>
       <h5>To finish it off, we added an LED light strip interfaced with an Arduino UNO due to some issues inherent in using the ESP8266 with the strip.</h5>
-      <img class="full" src="images/website/circuit:code/ledStrip.png" style="width:600px;"/>
-      <h5>All of our code and arduino files as well as html files for this website can be found <a href="https://github.com/mdh1418/6.S06Scream">here</a> on github</h5>
+      <img class="full" src="static/images/circuit:code/ledStrip.png" style="width:600px;"/>
+      <h5>All of our code and arduino files as well as html files for this website can be found <a href="https://github.com/xinw3n/6.s06Scream" target="_blank">here</a> on github</h5>
         
-      <h5>We also lasercut a case out of acrylic to enclose all of our electronic components. <a href="box-lasercut.pdf" target="_blank">Here</a> is the vector file for the box design.</h5>
+      <h5>We also lasercut a case out of acrylic to enclose all of our electronic components. <a href="static/box-lasercut.pdf" target="_blank">Here</a> is the vector file for the box design.</h5>
     
     
     
@@ -147,19 +147,19 @@ iframe{
       <h5>This page documents our different ideas for the final project and here's the presentation for the <a href = "https://docs.google.com/presentation/d/1v7J0B5Cj30CYhtALHk6lZM5TTwqGzEyEtLj0E9ydU0Q/edit" target="_blank">ideas pitch</a>. </h5>
         
       <h4>6.S06Scream Canister</h4>
-        <img class="full" src="images/website/brainstorm/scream.png" style="width:600px;"/>
+        <img class="full" src="static/images/brainstorm/scream.png" style="width:600px;"/>
         <h5>Stressed? Try our 6.S06Scream Canister, which is modeled after those in Disney’s film Monsters, Inc. As shown in the film, our 6.S06Scream Canister will register and record screams. To do so, simply project your voice into the nozzle of the device. When finished, the device will record and upload your scream in the form of dB and duration to a cloud platform and you can compete with your friends to see who's more stressed. It will be a playful way to destress from your daily hustle-and-bustle.</h5>
       <h4>Choreoglove</h4>
-        <img class="full" src="images/website/brainstorm/choreoglove.png" style="width:600px;"/>
+        <img class="full" src="static/images/brainstorm/choreoglove.png" style="width:600px;"/>
         <h5>Dance. Learning dance, teaching dance, practicing dance, whatever you're doing with dance, why stop? Instead of walking over to the laptop to pause, rewind, and play the song again, save time by simply using Choreoglove. Choreoglove is a glove that recognizes hand gestures a user makes. These gestures can lead to different Youtube video playbacks such as pausing the video, saving a a timestamp to rewind to it later, and even changing the speed at which the video plays. With the Choreoglove, spend less time manipulating the video and more time dancing!</h5>
       <h4>Smart Stroller</h4>
-        <img class="full" src="images/website/brainstorm/stroller.png" style="width:600px;"/>
+        <img class="full" src="static/images/brainstorm/stroller.png" style="width:600px;"/>
         <h5>It's hard to have a new-born. When you go out for a walk with your adorable baby, it's already troublesome enough to carry all the things and make sure the baby is content. Having to adjust the stroller cover and seat is just too much work. The smart stroller will detect its surrounding brightness and automatically adjust the cover position. If we have time, we also want to automate changing seat configuration (i.e. chaning between inclined and flat).</h5>
       <h4>Anemoi</h4>
-        <img class="full" src="images/website/brainstorm/anemoi.png" style="width:600px;"/>
+        <img class="full" src="static/images/brainstorm/anemoi.png" style="width:600px;"/>
         <h5>Sometimes, judging the weather can be difficult, even with the temperature scale. Instead of staring at numbers that correlate to how hot or cold it is outside, use Anemoi to simulate the temperature. Anemoi is a device that once a user inputs a certain thresholded degree, will simulate how that temperature feels. With this, it will be easier to pick out outfits without the burdensome process of trying them on, walking outside, and coming back to change. Anemoi will ideally be handheld and be able to simulate everyday temperatures.</h5>
       <h4>Tangible Game</h4>
-        <img class="full" src="images/website/brainstorm/tangible-game.png" style="width:600px;"/>
+        <img class="full" src="static/images/brainstorm/tangible-game.png" style="width:600px;"/>
         <h5>We want to take popular games out of the computer screens and let players interact with the game and with each other with their full body instead of a mouse cursor. Games will be projected onto a wall and players need to interact with projected images, e.g. catch a target or follow some movements. A camera behind the player will use computer vision to determine how accurately the player completes the task. This will encourage players to be more active and allow more interactions among the players.</h5>
     </div>
   </div>
@@ -174,7 +174,7 @@ iframe{
       <h1></h1>
     </div>
     <div class="w3-container">
-      <h5>On November 10th, we had our <a href="https://docs.google.com/presentation/d/1-k8N9qbHMW9w62l_ReCmDMHjLwYWRnBc535I6K1pn70/edit?usp=sharing">midterm project presentation</a> in class. </h5>
+      <h5>On November 10th, we had our <a href="https://docs.google.com/presentation/d/1-k8N9qbHMW9w62l_ReCmDMHjLwYWRnBc535I6K1pn70/edit?usp=sharing" target="_blank">midterm project presentation</a> in class. </h5>
       <h4>Progress</h4>
         <h5>By this time, we had a setup in which a microphone was interfaced with an Arduino UNO. For the canister, we brainstormed different ways to muffle any screams into it as well as ways to fabricate the canister itself. At the time, the options we were leaning towards included using acoustic foam or latex to line the inside of the container in hopes that they would help dampen the soundwaves. Our next steps were to make the canister more reliably sound proof as well as creating our end-to-end webapp system.</h5>
     </div>
@@ -190,9 +190,9 @@ iframe{
       <h1></h1>
     </div>
     <div class="w3-container">
-      <h5>On December 13th, we had our <a href="https://docs.google.com/presentation/d/1pLhbxeTExfX49koQ1J89Tz1TkN3xzvitczZTVAUMj18/edit?usp=sharing">final project presentation</a> in class. </h5>
+      <h5>On December 13th, we had our <a href="https://docs.google.com/presentation/d/1pLhbxeTExfX49koQ1J89Tz1TkN3xzvitczZTVAUMj18/edit?usp=sharing" target="_blank">final project presentation</a> in class. </h5>
       <h4>Progress</h4>
-        <h5>Since the midterm presentation on November 10th, we have made several design choices. Soundproofing the canister turned out to be a significantly more difficult task than we had originally anticipated. We ended up silicone casting the canister and placed our acoustic foam inside. We then shifted our focus to build the entire end-to-end system. In using the ESP8266 and NodeMCU, we ran into some difficulties trying to interface with MIT App Inventor. Eventually, we came across this comprehensive <a href="https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html">guide</a> that helped us build our website by using the ESP8266 as a server. After properly routing pages, we then interfaced the microphone to read values with the toggle of a button. Finally, we created a leaderboard by which users could view overall highscores, and lined the canister with led lights that lit up according to users' screams.</h5>
+        <h5>Since the midterm presentation on November 10th, we have made several design choices. Soundproofing the canister turned out to be a significantly more difficult task than we had originally anticipated. We ended up silicone casting the canister and placed our acoustic foam inside. We then shifted our focus to build the entire end-to-end system. In using the ESP8266 and NodeMCU, we ran into some difficulties trying to interface with MIT App Inventor. Eventually, we came across this comprehensive <a href="https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html" target="_blank">guide</a> that helped us build our website by using the ESP8266 as a server. After properly routing pages, we then interfaced the microphone to read values with the toggle of a button. Finally, we created a leaderboard by which users could view overall highscores, and lined the canister with led lights that lit up according to users' screams.</h5>
     </div>
   </div>
 </div>
@@ -207,7 +207,7 @@ iframe{
     <div class="w3-container">
       <h5> </h5>
 
-      <img class="full" src="images/website/timeline.png"/>
+      <img class="full" src="static/images/timeline.png"/>
     </div>
   </div>
 </div>
