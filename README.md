@@ -1,1 +1,1 @@
-# 6.s06Scream
+This is a site documenting Mitchell Hwang's and my work in MIT's 6.S063 Interactive Technologies, taught by Professor Stefanie Mueller. The original repository is https://github.com/mdh1418/6.S06Scream. I created this new repo with just the contents for our website to keep the documentation for the future. 
